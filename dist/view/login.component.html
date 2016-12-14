@@ -1,0 +1,25 @@
+<div class="pan_login_container">
+	<div class="pan_login_grey">
+		<div class="pan_login_grey_title_bar">
+			<h5>Log In</h5>
+		</div>
+		<div class="pan_login_content_container_main">
+			<div class="pan_login_content_section">
+				<div class="pan_login_body">
+					<md-input placeholder="Email Address" [(ngModel)]="username" name="email" class="grey-text text-darken-1" required></md-input>
+					<md-input placeholder="Password" [(ngModel)]="password" type="password" name="pass" class="grey-text text-darken-1" required></md-input>
+					<div class="pan_loginbtn_section">
+						<div class="pan_forgot_pswd">
+							<a href="">FORGOT PASSWORD</a>
+						</div>
+						<div class="pan_btn_section">
+							<button class="btn orange darken-2 pan_actions_btn" [disabled]="validLogin()" id="loginbtn" (click)="onLogin()">
+								<span>LOG IN</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

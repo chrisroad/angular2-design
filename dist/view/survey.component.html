@@ -1,0 +1,58 @@
+<div class="container">
+  <menu-home></menu-home>
+  <div class="row">
+    <header>
+      <!--header starts -->
+      <div class="row">
+        <div class=" col s12 m12 pan_header_left header-bar-style">
+          <div class="pan_head_title">
+            <h5>GFX Symphony<img class="icon icons8-Registered-Trademark" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAE60lEQVRoQ82agZUUNwyGpQoSKkioIFBBoIJABeEqCFQQUkGggkAFQAVwFQQqyF0FQAXK+zbyxqvVzMizs5vovXn77nbW9u/f+iXLVtnQzOx7EflRRO75w988vd2ICM9Hf65Vlb83MT21FTNj8D+LyKNk8NXmAfRWRF6rKkBX22pAZvZARH4VET63tA8i8puq8jlsw4Cckd/PACQOHkDPRhkbAmRmAHk6M21fRYSBsGz4/BIH5BPyrU8Iy/WnBRpeqOqzKlUlQO7sb9zRs7bficgrVcUPhs3MnrgPToFjgh5XxGMRkM/oexFhVqMB5GmlowpKn7gXE6x9EZGHS0twFpA7PsxEMLci8mSt4y6B835fich34d1FUJOAZph57azQ+NnMzJhE2CIk9DYLKgXk1P+ZMHOlqszcxczMECHEKIK6ny31KUCAQYF6uziY1rmLxh9hPB9V9X6c2SNAZgbNv/xfwHSgMqZequpBGDkA5H4DO72RjiCr/7mZGcs9+hRLb58uRUDIc5/KoGb3VPWsAlCdKRcKBt+r3wdVfdja2ANyqQRQb+h+KacyM6sOzN9r2fZbVSWelWxpnD2gyM7QUlsBqAdAtk3eVso0zIz3+qxiz9IO0ITv3B3JAE4E1MCVlNTDyl+B0p0vNUBR2d6pKvubsiWA9us6aYSQwMYPsfkmfE/OtshUwtJO8Rog0PY7y1Kj/UAiIFWt5In0yeB/6NpK40uclCQ23ajqXU3o+6qqWSI6y9YaQL7c6etzaPxORVmTVbEDBO19FB5ebj6wA5WrMNRAmBlKSi2iWUldk99dASj6D9vf52Xn8RfXMuSTsRYQ46QM0OwlgFY1lqzpUxiKuWOVIZKAPnZeAygKwkEqUWVqLUOnhIzktzcAWj2zG6gc8o3/9pn9rarGWt7kvB6N/1yAFqpCAGC5ZLGOjAG/LtklAZUGFF4aSrdSdT0jQ6OAjvY2lQYyhkgM+3R8E1GoDEZErj1ToAQ2vEVJROH2bLJNySkBxe6yz5KH/CUJFalsXyyw+gaNFdESUlghqx9mx/0nDawXTX3MDGWj1teMDd7j4hI9eG0q9UHzD/YWI3lY62FEXJLUfzi7zxRux7Z/EYWhtNFaG1g9w2cL3pYe/SNG5aWXJNW7gHy2Dd4Sy0kBcUi2lzZ4RO5YvjppC74E6MQs+8hNnOF/tuATjQ8564gPdX3GiazuVhGVPm3inHZXfjtbGavC0IT0zu7HymWsCZaGnXWN/FZ/43EM1+iz8T07Bww5oMyXSEuuqp2e8z0zY6sRy9LTpWAHlRXrT0pRtgA5cawyX6zvnJUY0ZeW+Go4Nm0BxCc5ZjP8+5OqxiOff0UhBEnWaB/42tcXB2VmHO3EDR+n7RwiHN1AWTqSpIASK5scabAEy1F9DVMuAJzcRZ8BzIOpw+OlQ2MozUAxM7BVOpkYBeTSjADE2sIsmCOVyzr2TVQGitcp48LWJpePPMeDlazWsAimBMidMqtB9/gBRmbBCfmwmVm7/DR1QPAJkJWJWyyoB7HIJD0CAFy7GkOd/OB2lTOOX5KqtGduEoaS1iFAXfAFWF+LHmal8APqDdxSGbpuNgyoi1XMLlvgrYEB5PlawVkNqAOGErbLR/EqS4GI3SscTrNUSbOGGIkdnAwoCcgw11/RjCAZfH9Fk/PRTVSSsfwNOXG7hJYZngMAAAAASUVORK5CYII=" width="10" height="14"> : Panera : Manage</h5>
+          </div>
+          <div class="">
+            <!-- heading-->
+            <h5>.</h5>
+          </div>
+        </div>
+
+      </div>
+    </header>
+    <!--header ends -->
+    <div class="row survey_body">
+      <div class="col s12 survey_title">
+        <h6>Survey Manager</h6>
+      </div>
+
+      <h5><strong>WELCOME TO SURVEY MANAGER</strong></h5>
+      <div class="table-above-text">
+        <p>
+          Selecting the "Start Survey" link in the location list below, will allow you to review and submit the status of items in each location.
+        </p>
+        <p>
+          Locations Will be removed from the list after submission and return as soon as all changes have been approved. Submissions may contains entries requiring verification, items requring verification will appear under the 'Verify' tab in the menu
+          above.
+        </p>
+      </div>
+
+      <div class="col s12 right-align survey_filter">
+        <div class="col s2 offset-s10">
+          <div class="input-field">
+            <select #location_name id="location_name">
+              <option value="" disabled selected>Location Name</option>
+              <option value="" class="orange-text">All</option>
+              <option class="orange-text" *ngFor="let location of locations" [value]="location">  {{location}} </option>
+            </select>
+            <label for="location_name">Filter</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="pan_content_grid pan_content_grid_survey">
+        <div class="panera_overlay"></div>
+        <div id="test1" class="col s12 pan_table_contentmain">
+          <ag-grid-ng2 #agGridCharacteristics style="width: 100%; height: 100%;" class="ag-fresh" [rowData]="rowData" [gridOptions]="itemCh.gridOptions" (selectionChanged)="onSelectionChanged(itemCh)" (gridReady)="onGridReady(itemCh)" rowSelection="multiple" enableColResize (rowClicked)="onRowClicked($event)" [columnDefs]="columnDefs" rowHeight="70">
+          </ag-grid-ng2>
+        </div>
+      </div>
+    </div>   
+
+  </div>
